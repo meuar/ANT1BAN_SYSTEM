@@ -1,4 +1,10 @@
 import os; import amino; import time; from sys import stdout; import heroku3
+try:
+    import requests
+    from flask import Flask
+    from json_minify import json_minify
+except:
+    os.system("pip3 install requests flask json_minify")
 
 com_id = "52368421"
 
